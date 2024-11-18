@@ -1,0 +1,356 @@
+
+*{
+    text-decoration: none;
+    padding:0;
+    box-sizing: border-box;
+    
+   
+}
+body{
+    background:whitesmoke;
+}
+
+.navbar{
+    width: 100%;
+    background-color:lightblue;
+    box-shadow: 0 0 4px;
+    top:0;
+    z-index:0;
+    left:0;
+    right:0;
+    font-size: 20px;
+    font-family: Calibri;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+
+.inputFormForSearch{
+
+}
+
+.navdiv{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.search-bar{
+    width: 100%;
+    flex-grow: 1;
+}
+
+.search-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.inputFormForSearch{
+    width: 50%;
+    max-width: 8rem;
+}
+
+ /* for styling the contents like About, contact and buttons in navbar */
+.flex{            
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo {
+    
+    
+    font-weight:300;
+    color:black;
+}
+li{
+    list-style: none;
+    display: inline-block;
+
+}
+li a{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: right 25px;
+}
+
+   /* for About page  */
+
+   #about {
+    background: #f8f9fa; /* Light grey background for contrast */
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#about h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#about h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.signInBtn{
+    text-align:center;
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+   
+    
+}
+.signUpBtn{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* button a{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+
+} */
+/* Basic styling for the header */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form.search-form input[type=text]{
+    width:200px;
+    height: 20px;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header nav {
+    display: flex;
+    gap: 10px;
+}
+
+.header a, .header button {
+    color: white;
+    background-color: #333;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: #555;
+}
+.contents ul{
+    gap: 60px;
+
+}
+
+button[type="submit"] {
+    
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Pop-Up styling */
+.popup {
+    display: none; /* Initially hidden */
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    bottom:0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pop-Up content box */
+.popup-content {
+    background-color:#d4ecff;
+    padding: 40px;
+    border-radius: 0.5rem;  /*   for curvature on edges for pop up window*/
+    width: 500px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    
+}
+
+/* Close button for the pop-up */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Form styling inside the pop-up */
+
+
+form button{
+    width: 50%;
+    
+}
+
+label {
+    font-size: 19px;
+    margin-top: 10px;
+    text-align: left;
+    padding:12px 12px 12px 0px;
+    display:inline-block;
+}
+.signin{
+    height: 10%;
+    width: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 10px;
+    justify-content: space-between;
+    
+}
+
+.signup{
+    height: 10%;
+    width: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0px 50px;
+    justify-content: space-between;
+}
+.text{
+    height: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:16px;
+    width:250px;
+    font-size: 20px;
+    padding:20px;
+   align-items: center;
+   margin:10px auto;
+   border-radius: 0.5rem;
+    
+}
+
+main{
+    width: 100%;
+    padding-block:10px;
+    margin-top:50px;
+    box-sizing: border-box;
+    background-color:whitesmoke;
+}
+.cards-container{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+
+}
+.card{
+    min-height: 400px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 4px #d4ecff ;
+    cursor:pointer;
+    overflow:hidden;
+    transition: all;
+    
+}
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    transform: translateY();
+}
+.card-header img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+.card-content{
+    padding: 12px;
+}
+.news.source{
+    margin-block: 12px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;
+}
+.footer {
+    background-color:rgb(166, 135, 250);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.footer-links li a {
+    text-decoration: none;
+    color: white;
+}
+.footer-links li a:hover {
+    text-decoration: underline;
+}

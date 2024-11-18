@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <title> login page</title>
+    <head></head>
+    <body>
+    <div id ="signInPopup" class="popup">
+        <div class="popup-content">
+            <span class="close"  onclick="closeSignIn()">&times;</span>
+            <h2> SignIn</h2>
+            <form>
+                
+                    <label for=" username">username</label>
+                    <input type="text"  id="username" name ="username" required>
+                    <label for="password">Password</label>
+                    <input type="text" id="password" name="password" required>
+               
+                
+                <button type="submit">SignIn</button>
+            </form>
+        </div>
+    </div>
+
+    <script> function openSignIn(){
+        document.getElementById("signInPopup").style.display="flex";
+    }
+    function closeSignIn(){
+        document.getElementById("signInPopup").style.display="none";
+    }</script>
+
+</body>
+</html>
